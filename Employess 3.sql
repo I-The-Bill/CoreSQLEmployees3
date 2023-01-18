@@ -20,8 +20,8 @@ create table if not exists EmployeeSalary(
 	Salary double,
     Varible int,
     foreign key (EmpId) References EmployeeDetails(EmpId)
-    #on delete cascade
-	#on update cascade
+    on delete cascade
+    on update cascade
 );
 
 insert into EmployeeDetails(EmpId, EmpFullname, ManagerId, DateOfJoining, City) 
